@@ -7,11 +7,10 @@ export const getPins = createAsyncThunk("dash/getPins", async (keyword) => {
     method: "GET",
     url: "https://pinterest-downloader-download-pinterest-image-video-and-reels.p.rapidapi.com/api/basesearch",
     params: { query: keyword },
-    headers: {
-      "X-RapidAPI-Key": "65a82f9d06msh8dfda57910dac51p15b9bajsn537c6178e361",
-      "X-RapidAPI-Host":
-        "pinterest-downloader-download-pinterest-image-video-and-reels.p.rapidapi.com",
-    },
+  headers: {
+    'X-RapidAPI-Key': 'f1d23fd19fmshaeef04c8c4629e4p197180jsn3943ae586bd7',
+    'X-RapidAPI-Host': 'pinterest-downloader-download-pinterest-image-video-and-reels.p.rapidapi.com'
+  }
   };
   try {
     const response = await axios.request(options);
